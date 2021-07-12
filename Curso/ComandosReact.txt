@@ -1,0 +1,64 @@
+--------- FAZER DEPLOY DO PROJETO FINAL ----------
+
+Netlify (hospedagem gratuita)
+
+- Fazendo deploy -
+Você pode arrastar a pasta "build" ou enviar via Terminal:
+
+-Instale primeiro: npm i -g netlify-cli
+-Digite no cmd: netlify deploy 
+-Dps va na opção do cmd: + Create & configure a new site(para criar novo site)
+-Escolha o time: Mizrain1 team
+-Escolha o nome do site 
+-Dps escolha a pasta que vc quer que suba para a produção, no caso e a "build" então coloque o diretorio dela: ./build
+-Quando finaliza e apenas um rascunho, ainda não esta no ar, então digite: netlify deploy --prod
+
+PRONTO - Seu site já esta no ar!
+
+
+- npm run-script build (buildar o projeto e cria uma pasta "build")
+
+Porém se o seu projeto tiver rotas (routes) devera fazer mais um passo:
+
+-Vá na pasta "public"
+-Crie um arquivo chamado "_redirects"
+-Digite no arquivo o código: /* /index.html 200
+-Faça o build novamente: npm run build (ou npm run-script build)
+
+--------- COMANDOS REACT -----------
+
+Instalando o React na máquina:
+
+- npm i react
+
+Criando um new Projeto React:
+
+- npx create-react-app nomeDoProjeto
+
+Comandos dps de criado projeto:
+
+- npm start (starta o servidor de desenvolvimento)
+- npm test (starta o test da app)
+- npm run build (agrupa os arquivos do projeto para produção)
+
+Extensão para utilização de ROTAS react
+
+- npm i react-router-dom
+
+Bibliotecas opcionais React
+
+- npm i react-icons (para usar icons svg)
+
+Extensões úteis do VSCode para melhor dev:
+
+-React-Native/React/Redux snippets for es6/es7
+
+------------ FIREBASE -------------
+
+Plataforma gratuita do Google para Banco de Dados e muitos outros serviços.
+
+Antes de começar instala a biblioteca:
+- npm i firebase 
+
+
+    

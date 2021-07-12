@@ -1,0 +1,99 @@
+.sidebar{
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #181C2e;
+    position: fixed; /*ficara fixo*/
+    height: 100%; /*vai pegar td a altura da tela*/
+    overflow: auto; /*add barra de rolagem so qd necessário*/
+  }
+  
+  .sidebar div{
+    background: url('../../assets/cover.png');
+    background-color: #181C2e;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* "cover" Ajusta imagem o mais largamente possível e mantém sua proporção (a imagem não fica esticada) */
+    background-size: cover;
+    height: 150px;
+  }
+  
+  .sidebar div{
+    padding-top: 30px;
+  }
+  
+  .sidebar div img {
+    border-radius: 50%; /*vai ser sempre arredondada*/
+    display: block;
+    margin:auto;
+    width: 90px;
+    height: 90px;
+    /* sombreamento browsers antigos */
+    -webkit-filter: drop-shadow(2px 3px 6px #121212);
+    /* aplica um sombreamento */
+    filter: drop-shadow(2px 3px 6px #121212);
+    /* O conteúdo substituído é dimensionado para manter sua proporção e preencher toda a caixa de conteúdo do elemento */
+    object-fit: cover;
+  }
+  
+  .sidebar a{
+    display: block;
+    color: rgba(255,255,255, 0.7);
+    padding: 16px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: ease-in-out .4s;
+  }
+  
+  .sidebar a svg{
+    margin-right: .5em;
+  }
+  
+  .sidebar a:hover{
+    background-color: #121212;
+    color: #FFF;
+  }
+  
+  .content{
+    margin-left: 200px;
+    padding: 1px 16px;
+  }
+  
+  /* css mobile */
+  @media screen and (max-width: 700px){
+    .sidebar{
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+  
+    /* qd tiver mobile esconde a sidebar */
+    div.content{
+      margin-left: 0;
+    }
+  
+    .sidebar a{
+      float: left;
+    }
+    .sidebar div{
+      display: none;
+    }
+  
+    .sidebar a svg{
+      display: none;
+    }
+  }
+  
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  
+    .sidebar a svg {
+      display: none;
+    }
+  }
